@@ -13,22 +13,26 @@ include_directories(
     ${CMAKE_CURRENT_SOURCE_DIR}/../include/eprosimartps
 )  
   
+link_directories(
+    ${CMAKE_CURRENT_SOURCE_DIR}/../lib
+)
 
-link_directories(${CMAKE_CURRENT_SOURCE_DIR}/../lib)
 # 添加一个动态库  
 add_executable(
-    test 
-    ${CMAKE_CURRENT_SOURCE_DIR}/test3.cpp
+    test_Discovery 
+    ${CMAKE_CURRENT_SOURCE_DIR}/test_Discovery.cpp
 )  
   
 
-
-target_link_directories(test PRIVATE -lfastrtps -lboost)
-
+find_package(Boost REQUIRED COMPONENTS filesystem system thread)
+target_link_libraries(
+    test_Discovery 
+    fastrtps boost_system boost_filesystem boost_thread
+)
 
 # 如果需要，可以设置库的输出目录（可选）  
 set_target_properties(
-    test  
+    test_Discovery  
     PROPERTIES LIBRARY_OUTPUT_DIRECTORY 
     ${CMAKE_BINARY_DIR}/lib
 )
