@@ -18,7 +18,7 @@
 #include "socket.c"
 #include <unistd.h>
 #include <sys/param.h>
-#include <rpc/types.h>
+//#include <rpc/types.h>
 #include <getopt.h>
 #include <strings.h>
 #include <time.h>
@@ -220,6 +220,7 @@ void build_request(const char *url)
 		  
   strcat(request," ");
 
+   printf("%p, %s\n", url, url);
   if(NULL==strstr(url,"://"))
   {
 	  fprintf(stderr, "\n%s: is not a valid URL.\n",url);

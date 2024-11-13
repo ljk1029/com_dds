@@ -16,6 +16,14 @@
 * C++14
 * MySql
 
+安装：
+sudo apt-get install libmysqlclient-dev
+
+
+编译 gcc webbench.c
+webbench 测试:
+./a.out  -c 100 -t 60 -1  http://127.0.0.1:1316/
+
 ## 目录树
 ```
 .
@@ -79,7 +87,6 @@ make
 ```
 
 ## 压力测试
-![image-webbench](https://github.com/markparticle/WebServer/blob/master/readme.assest/%E5%8E%8B%E5%8A%9B%E6%B5%8B%E8%AF%95.png)
 ```bash
 ./webbench-1.5/webbench -c 100 -t 10 http://ip:port/
 ./webbench-1.5/webbench -c 1000 -t 10 http://ip:port/
