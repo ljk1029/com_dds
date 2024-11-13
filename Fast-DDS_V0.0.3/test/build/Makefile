@@ -57,10 +57,10 @@ RM = /usr/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/ljk/ljk/fastdds/com_dds/Fast-DDS_V0.0.3/test
+CMAKE_SOURCE_DIR = /home/ljk/gitlab/com_dds/Fast-DDS_V0.0.3/test
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/ljk/ljk/fastdds/com_dds/Fast-DDS_V0.0.3/test/build
+CMAKE_BINARY_DIR = /home/ljk/gitlab/com_dds/Fast-DDS_V0.0.3/test/build
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -87,9 +87,9 @@ rebuild_cache/fast: rebuild_cache
 
 # The main all target
 all: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/ljk/ljk/fastdds/com_dds/Fast-DDS_V0.0.3/test/build/CMakeFiles /home/ljk/ljk/fastdds/com_dds/Fast-DDS_V0.0.3/test/build//CMakeFiles/progress.marks
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/ljk/gitlab/com_dds/Fast-DDS_V0.0.3/test/build/CMakeFiles /home/ljk/gitlab/com_dds/Fast-DDS_V0.0.3/test/build//CMakeFiles/progress.marks
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/ljk/ljk/fastdds/com_dds/Fast-DDS_V0.0.3/test/build/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/ljk/gitlab/com_dds/Fast-DDS_V0.0.3/test/build/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
@@ -129,6 +129,117 @@ test_Discovery/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/test_Discovery.dir/build.make CMakeFiles/test_Discovery.dir/build
 .PHONY : test_Discovery/fast
 
+#=============================================================================
+# Target rules for targets named LatencyTest
+
+# Build rule for target.
+LatencyTest: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 LatencyTest
+.PHONY : LatencyTest
+
+# fast build rule for target.
+LatencyTest/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/LatencyTest.dir/build.make CMakeFiles/LatencyTest.dir/build
+.PHONY : LatencyTest/fast
+
+#=============================================================================
+# Target rules for targets named StatefulTest
+
+# Build rule for target.
+StatefulTest: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 StatefulTest
+.PHONY : StatefulTest
+
+# fast build rule for target.
+StatefulTest/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/StatefulTest.dir/build.make CMakeFiles/StatefulTest.dir/build
+.PHONY : StatefulTest/fast
+
+#=============================================================================
+# Target rules for targets named StatelessTest
+
+# Build rule for target.
+StatelessTest: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 StatelessTest
+.PHONY : StatelessTest
+
+# fast build rule for target.
+StatelessTest/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/StatelessTest.dir/build.make CMakeFiles/StatelessTest.dir/build
+.PHONY : StatelessTest/fast
+
+LatencyTest.o: LatencyTest.cpp.o
+.PHONY : LatencyTest.o
+
+# target to build an object file
+LatencyTest.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/LatencyTest.dir/build.make CMakeFiles/LatencyTest.dir/LatencyTest.cpp.o
+.PHONY : LatencyTest.cpp.o
+
+LatencyTest.i: LatencyTest.cpp.i
+.PHONY : LatencyTest.i
+
+# target to preprocess a source file
+LatencyTest.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/LatencyTest.dir/build.make CMakeFiles/LatencyTest.dir/LatencyTest.cpp.i
+.PHONY : LatencyTest.cpp.i
+
+LatencyTest.s: LatencyTest.cpp.s
+.PHONY : LatencyTest.s
+
+# target to generate assembly for a file
+LatencyTest.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/LatencyTest.dir/build.make CMakeFiles/LatencyTest.dir/LatencyTest.cpp.s
+.PHONY : LatencyTest.cpp.s
+
+StatefulTest.o: StatefulTest.cpp.o
+.PHONY : StatefulTest.o
+
+# target to build an object file
+StatefulTest.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/StatefulTest.dir/build.make CMakeFiles/StatefulTest.dir/StatefulTest.cpp.o
+.PHONY : StatefulTest.cpp.o
+
+StatefulTest.i: StatefulTest.cpp.i
+.PHONY : StatefulTest.i
+
+# target to preprocess a source file
+StatefulTest.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/StatefulTest.dir/build.make CMakeFiles/StatefulTest.dir/StatefulTest.cpp.i
+.PHONY : StatefulTest.cpp.i
+
+StatefulTest.s: StatefulTest.cpp.s
+.PHONY : StatefulTest.s
+
+# target to generate assembly for a file
+StatefulTest.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/StatefulTest.dir/build.make CMakeFiles/StatefulTest.dir/StatefulTest.cpp.s
+.PHONY : StatefulTest.cpp.s
+
+StatelessTest.o: StatelessTest.cpp.o
+.PHONY : StatelessTest.o
+
+# target to build an object file
+StatelessTest.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/StatelessTest.dir/build.make CMakeFiles/StatelessTest.dir/StatelessTest.cpp.o
+.PHONY : StatelessTest.cpp.o
+
+StatelessTest.i: StatelessTest.cpp.i
+.PHONY : StatelessTest.i
+
+# target to preprocess a source file
+StatelessTest.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/StatelessTest.dir/build.make CMakeFiles/StatelessTest.dir/StatelessTest.cpp.i
+.PHONY : StatelessTest.cpp.i
+
+StatelessTest.s: StatelessTest.cpp.s
+.PHONY : StatelessTest.s
+
+# target to generate assembly for a file
+StatelessTest.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/StatelessTest.dir/build.make CMakeFiles/StatelessTest.dir/StatelessTest.cpp.s
+.PHONY : StatelessTest.cpp.s
+
 test_Discovery.o: test_Discovery.cpp.o
 .PHONY : test_Discovery.o
 
@@ -161,7 +272,19 @@ help:
 	@echo "... depend"
 	@echo "... edit_cache"
 	@echo "... rebuild_cache"
+	@echo "... LatencyTest"
+	@echo "... StatefulTest"
+	@echo "... StatelessTest"
 	@echo "... test_Discovery"
+	@echo "... LatencyTest.o"
+	@echo "... LatencyTest.i"
+	@echo "... LatencyTest.s"
+	@echo "... StatefulTest.o"
+	@echo "... StatefulTest.i"
+	@echo "... StatefulTest.s"
+	@echo "... StatelessTest.o"
+	@echo "... StatelessTest.i"
+	@echo "... StatelessTest.s"
 	@echo "... test_Discovery.o"
 	@echo "... test_Discovery.i"
 	@echo "... test_Discovery.s"

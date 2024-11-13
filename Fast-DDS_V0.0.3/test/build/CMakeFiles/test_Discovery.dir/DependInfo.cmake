@@ -8,7 +8,7 @@ set(CMAKE_DEPENDS_LANGUAGES
 
 # The set of dependency files which are needed:
 set(CMAKE_DEPENDS_DEPENDENCY_FILES
-  "/home/ljk/ljk/fastdds/com_dds/Fast-DDS_V0.0.3/test/test_Discovery.cpp" "CMakeFiles/test_Discovery.dir/test_Discovery.cpp.o" "gcc" "CMakeFiles/test_Discovery.dir/test_Discovery.cpp.o.d"
+  "/home/ljk/gitlab/com_dds/Fast-DDS_V0.0.3/test/test_Discovery.cpp" "CMakeFiles/test_Discovery.dir/test_Discovery.cpp.o" "gcc" "CMakeFiles/test_Discovery.dir/test_Discovery.cpp.o.d"
   )
 
 # Targets to which this target links.

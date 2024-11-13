@@ -3,7 +3,10 @@ project(MyProject)
   
 # 指定 C++ 标准  
 set(CMAKE_CXX_STANDARD 11)  
-set(CMAKE_CXX_STANDARD_REQUIRED True)  
+set(CMAKE_CXX_STANDARD_REQUIRED True) 
+
+# 设置编译类型为 Debug，这会开启调试相关的编译选项，比如生成调试符号等信息，方便 gdb 调试
+set(CMAKE_BUILD_TYPE Debug)
 
 add_definitions(-D__LITTLE_ENDIAN__)
   

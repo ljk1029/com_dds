@@ -1,4 +1,4 @@
-# Install script for directory: /home/ljk/ljk/fastdds/com_dds/Fast-DDS_V0.0.3/test
+# Install script for directory: /home/ljk/gitlab/com_dds/Fast-DDS_V0.0.3/test
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
@@ -50,5 +50,5 @@ endif()
 
 string(REPLACE ";" "\n" CMAKE_INSTALL_MANIFEST_CONTENT
        "${CMAKE_INSTALL_MANIFEST_FILES}")
-file(WRITE "/home/ljk/ljk/fastdds/com_dds/Fast-DDS_V0.0.3/test/build/${CMAKE_INSTALL_MANIFEST}"
+file(WRITE "/home/ljk/gitlab/com_dds/Fast-DDS_V0.0.3/test/build/${CMAKE_INSTALL_MANIFEST}"
      "${CMAKE_INSTALL_MANIFEST_CONTENT}")

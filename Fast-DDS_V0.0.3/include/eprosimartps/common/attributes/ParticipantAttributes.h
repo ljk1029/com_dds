@@ -56,7 +56,7 @@ public:
 		use_SIMPLE_EndpointDiscoveryProtocol = false;
 		use_STATIC_EndpointDiscoveryProtocol = false;
 		resendSPDPDataPeriod_sec = 30;
-		m_staticEndpointXMLFilename = "/home/grcanosa/workspace/eRTPS/utils/pcTests/StaticParticipantInfo.xml";
+		m_staticEndpointXMLFilename = "./include/StaticParticipantInfo.xml";
 	};
 	virtual ~DiscoveryAttributes(){};
 };

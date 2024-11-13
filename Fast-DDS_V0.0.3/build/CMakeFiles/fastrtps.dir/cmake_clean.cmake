@@ -1,4 +1,6 @@
 file(REMOVE_RECURSE
+  "../lib/libfastrtps.pdb"
+  "../lib/libfastrtps.so"
   "CMakeFiles/fastrtps.dir/src/cpp/CacheChangePool.cpp.o"
   "CMakeFiles/fastrtps.dir/src/cpp/CacheChangePool.cpp.o.d"
   "CMakeFiles/fastrtps.dir/src/cpp/Endpoint.cpp.o"
@@ -83,8 +85,6 @@ file(REMOVE_RECURSE
   "CMakeFiles/fastrtps.dir/src/cpp/writer/StatefulWriter.cpp.o.d"
   "CMakeFiles/fastrtps.dir/src/cpp/writer/StatelessWriter.cpp.o"
   "CMakeFiles/fastrtps.dir/src/cpp/writer/StatelessWriter.cpp.o.d"
-  "lib/libfastrtps.pdb"
-  "lib/libfastrtps.so"
 )
 
 # Per-language clean rules from dependency scanning.

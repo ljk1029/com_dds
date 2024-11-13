@@ -30,9 +30,39 @@ target_link_libraries(
     fastrtps boost_system boost_filesystem boost_thread
 )
 
-# 如果需要，可以设置库的输出目录（可选）  
-set_target_properties(
-    test_Discovery  
-    PROPERTIES LIBRARY_OUTPUT_DIRECTORY 
-    ${CMAKE_BINARY_DIR}/lib
+
+
+
+add_executable(
+    LatencyTest 
+    ${CMAKE_CURRENT_SOURCE_DIR}/LatencyTest.cpp
+)  
+
+target_link_libraries(
+    LatencyTest 
+    fastrtps boost_system boost_filesystem boost_thread
 )
+  
+
+add_executable(
+    StatefulTest 
+    ${CMAKE_CURRENT_SOURCE_DIR}/StatefulTest.cpp
+)  
+
+target_link_libraries(
+    StatefulTest 
+    fastrtps boost_system boost_filesystem boost_thread
+)
+
+
+add_executable(
+    StatelessTest 
+    ${CMAKE_CURRENT_SOURCE_DIR}/StatelessTest.cpp
+)  
+
+target_link_libraries(
+    StatelessTest 
+    fastrtps boost_system boost_filesystem boost_thread
+)
+
+
